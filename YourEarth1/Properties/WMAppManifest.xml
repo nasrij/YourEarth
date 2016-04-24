@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2014/deployment" AppPlatformVersion="8.1">
   <DefaultLanguage xmlns="" code="fr-FR" />
-  <App xmlns="" ProductID="{08cedb82-bfc3-4240-9411-bc3b1b154292}" Title="YourEarth" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="YourEarth1 author" Description="Sample description" Publisher="YourEarth1" PublisherID="{1832e533-1dfa-4105-8860-334d08317014}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+  <App xmlns="" ProductID="{08cedb82-bfc3-4240-9411-bc3b1b154292}" Title="YourEarth" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="YourEarth1 author" Description="Sample description" Publisher="YourEarth1" PublisherID="{1832e533-1dfa-4105-8860-334d08317014}" NotificationService="MPN">
+    <IconPath IsRelative="true" IsResource="false">Assets\2 copy.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
@@ -11,16 +11,18 @@
       <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
       <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
     </Capabilities>
     <Tasks>
-      <DefaultTask Name="_default" NavigationPage="views\Coneexion.xaml" />
+      <DefaultTask Name="_default" NavigationPage="views/spalsh.xaml" />
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="YourEarth1Token" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\2 copy.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\3 copy.png</BackgroundImageURI>
           <Title>YourEarth</Title>
           <BackContent>
           </BackContent>

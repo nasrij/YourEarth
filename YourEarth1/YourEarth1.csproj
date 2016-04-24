@@ -104,14 +104,58 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="models\Data.cs" />
+    <Compile Include="models\Eonet.cs" />
+    <Compile Include="models\EonetItem.cs" />
+    <Compile Include="models\image.cs" />
+    <Compile Include="models\Notifications.cs" />
+    <Compile Include="models\Rootobject.cs" />
+    <Compile Include="models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SessionStorage.cs" />
+    <Compile Include="views\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\AjouterObservation.xaml.cs">
+      <DependentUpon>AjouterObservation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\AllObservation.xaml.cs">
+      <DependentUpon>AllObservation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\Browser.xaml.cs">
+      <DependentUpon>Browser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\Climateserv.xaml.cs">
+      <DependentUpon>Climateserv.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\Coneexion.xaml.cs">
       <DependentUpon>Coneexion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\Eonet.xaml.cs">
+      <DependentUpon>Eonet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\EonetItem.xaml.cs">
+      <DependentUpon>EonetItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\FindObservation.xaml.cs">
+      <DependentUpon>FindObservation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\Location.xaml.cs">
+      <DependentUpon>Location.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\observation.xaml.cs">
+      <DependentUpon>observation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\spalsh.xaml.cs">
+      <DependentUpon>spalsh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\Test.xaml.cs">
+      <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -123,7 +167,55 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="views\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\AjouterObservation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\AllObservation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\Browser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\Climateserv.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="views\Coneexion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\Eonet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\EonetItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\FindObservation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\Location.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\observation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\spalsh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\Test.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,12 +231,32 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\1.jpg" />
+    <Content Include="Assets\11.jpg" />
+    <Content Include="Assets\12.jpg" />
+    <Content Include="Assets\13.jpg" />
+    <Content Include="Assets\14.jpg" />
+    <Content Include="Assets\22.jpg" />
+    <Content Include="Assets\fleche.png" />
+    <Content Include="Assets\logo1.png" />
+    <Content Include="Assets\o.jpg" />
+    <Content Include="Assets\2 copy.png" />
+    <Content Include="Assets\3 copy.png" />
     <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\add.png" />
+    <Content Include="Assets\browser.png" />
+    <Content Include="Assets\facebook.png" />
+    <Content Include="Assets\bart.jpg" />
+    <Content Include="Assets\ic_drawer.png" />
+    <Content Include="Assets\location.png" />
+    <Content Include="Assets\camera.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\BadgeLogo.png" />
     <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\search_ic.png" />
+    <Content Include="Assets\2.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\SquareTile150x150.png" />
     <Content Include="Assets\SquareTile71x71.png" />
@@ -164,7 +276,14 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Untitled-2.png" />
     <Content Include="Assets\WideLogo.png" />
+    <Content Include="README_FIRST.txt" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">
@@ -173,10 +292,28 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="models\" />
+    <ProjectReference Include="..\DrawerLayout\DrawerLayout.csproj">
+      <Project>{03b54b5f-ffc3-40a3-94df-6ab81c446e32}</Project>
+      <Name>DrawerLayout</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\wp81\Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Facebook.Client">
+      <HintPath>..\..\..\..\..\Desktop\C#54v2\FaceBookLoginWP8\Bin\Debug\Facebook.Client.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=8.0.1.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Messaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAzure.Messaging.Managed.0.1.7.9\lib\windowsphone8\Microsoft.WindowsAzure.Messaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -193,6 +330,9 @@
       <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll</HintPath>
       <Private>True</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

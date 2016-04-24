@@ -1,0 +1,57 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="YourEarth1.views.FindObservation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot" Background="#0288D1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contient le nom de l'application et le titre de la page-->
+        <Grid Grid.Row="0" Margin="12,17,0,15">
+            <TextBox Text="Search ..." Foreground="Gray" Name="search" GotFocus="Image_GotFocus" LostFocus="Image_LostFocus"/>
+            <Image Source="/Assets/search_ic.png" Width="40" Height="40" Margin="408,12,10,10" Tap="Image_Tap" />
+        </Grid>
+
+        <!--ContentPanel - placez tout contenu supplémentaire ici-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ListBox Name="ListeObservation" ItemsSource="{Binding}"  SelectionChanged="ListeObservation_SelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Image Source="{Binding image}" Height="250" Stretch="Fill" Margin="5"/>
+                            <Grid  Margin="5,-50,5,5">
+                                <Grid.Background>
+                                    <SolidColorBrush Color="Black" Opacity=".4" />
+                                </Grid.Background>
+                                <TextBlock Text="{Binding nom}"  VerticalAlignment="Center"  HorizontalAlignment="Center" FontSize="24" >
+
+                                </TextBlock>
+                                <TextBlock Text="{Binding id}" Visibility="Collapsed"/>
+                                <TextBlock Text="{Binding description}" Visibility="Collapsed"/>
+                                <TextBlock Text="{Binding longitude}" Visibility="Collapsed"/>
+                                <TextBlock Text="{Binding latitude}" Visibility="Collapsed"/>
+                                <TextBlock Text="{Binding date}" Visibility="Collapsed"/>
+                                <TextBlock Text="{Binding theme}" Visibility="Collapsed"/>
+
+                            </Grid>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

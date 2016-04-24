@@ -1,7 +1,12 @@
 ﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="YourEarth1" EntryPointType="YourEarth1.App" RuntimeVersion="6.7.50308.0">
   <Deployment.Parts>
     <AssemblyPart x:Name="YourEarth1" Source="YourEarth1.dll" />
+    <AssemblyPart x:Name="DrawerLayout" Source="DrawerLayout.dll" />
+    <AssemblyPart x:Name="Facebook.Client" Source="Facebook.Client.dll" />
+    <AssemblyPart x:Name="Facebook" Source="Facebook.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="Microsoft.WindowsAzure.Messaging" Source="Microsoft.WindowsAzure.Messaging.dll" />
     <AssemblyPart x:Name="Newtonsoft.Json" Source="Newtonsoft.Json.dll" />
     <AssemblyPart x:Name="System.Net.Http" Source="System.Net.Http.dll" />
     <AssemblyPart x:Name="System.Net.Http.Extensions" Source="System.Net.Http.Extensions.dll" />

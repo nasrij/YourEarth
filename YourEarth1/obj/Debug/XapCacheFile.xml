@@ -1,31 +1,67 @@
-﻿<xapCache source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\YourEarth1_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="23/04/2016 18:39:45">
-  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="23/04/2016 18:39:43" />
-  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\obj\Debug\YourEarth1.dll" archivePath="YourEarth1.dll" lastWriteTime="23/04/2016 18:39:42" />
+﻿<xapCache source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\YourEarth1_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="24/04/2016 14:36:12">
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\resources.pri" archivePath="resources.pri" lastWriteTime="24/04/2016 14:33:36" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\obj\Debug\YourEarth1.dll" archivePath="YourEarth1.dll" lastWriteTime="24/04/2016 14:36:05" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\1.jpg" archivePath="Assets\1.jpg" lastWriteTime="23/04/2016 22:29:43" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\11.jpg" archivePath="Assets\11.jpg" lastWriteTime="24/04/2016 14:09:08" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\12.jpg" archivePath="Assets\12.jpg" lastWriteTime="24/04/2016 14:09:08" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\13.jpg" archivePath="Assets\13.jpg" lastWriteTime="24/04/2016 14:09:08" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\14.jpg" archivePath="Assets\14.jpg" lastWriteTime="24/04/2016 14:09:08" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\22.jpg" archivePath="Assets\22.jpg" lastWriteTime="24/04/2016 14:24:05" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\fleche.png" archivePath="Assets\fleche.png" lastWriteTime="24/04/2016 09:32:24" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\logo1.png" archivePath="Assets\logo1.png" lastWriteTime="24/04/2016 09:17:07" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\o.jpg" archivePath="Assets\o.jpg" lastWriteTime="24/04/2016 09:09:53" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\2 copy.png" archivePath="Assets\2 copy.png" lastWriteTime="23/04/2016 19:13:22" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\3 copy.png" archivePath="Assets\3 copy.png" lastWriteTime="23/04/2016 19:13:21" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="23/04/2016 15:28:20" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\add.png" archivePath="Assets\add.png" lastWriteTime="23/04/2016 19:50:51" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\browser.png" archivePath="Assets\browser.png" lastWriteTime="24/04/2016 05:09:19" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\facebook.png" archivePath="Assets\facebook.png" lastWriteTime="24/04/2016 02:54:15" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\bart.jpg" archivePath="Assets\bart.jpg" lastWriteTime="24/04/2016 00:42:49" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\ic_drawer.png" archivePath="Assets\ic_drawer.png" lastWriteTime="24/04/2016 00:42:49" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\location.png" archivePath="Assets\location.png" lastWriteTime="23/04/2016 23:30:58" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\camera.png" archivePath="Assets\camera.png" lastWriteTime="23/04/2016 19:49:44" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="23/04/2016 15:28:20" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\BadgeLogo.png" archivePath="Assets\BadgeLogo.png" lastWriteTime="23/04/2016 16:14:46" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\Logo.png" archivePath="Assets\Logo.png" lastWriteTime="23/04/2016 16:14:46" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\search_ic.png" archivePath="Assets\search_ic.png" lastWriteTime="24/04/2016 01:58:24" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\2.png" archivePath="Assets\2.png" lastWriteTime="24/04/2016 03:38:03" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\SplashScreen.png" archivePath="Assets\SplashScreen.png" lastWriteTime="23/04/2016 16:14:46" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\SquareTile150x150.png" archivePath="Assets\SquareTile150x150.png" lastWriteTime="23/04/2016 16:14:46" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\SquareTile71x71.png" archivePath="Assets\SquareTile71x71.png" lastWriteTime="23/04/2016 16:14:46" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\StoreLogo.png" archivePath="Assets\StoreLogo.png" lastWriteTime="23/04/2016 16:14:46" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="23/04/2016 15:28:19" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="23/04/2016 15:28:19" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="23/04/2016 15:28:20" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="23/04/2016 15:28:20" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="23/04/2016 15:28:20" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\Untitled-2.png" archivePath="Assets\Untitled-2.png" lastWriteTime="24/04/2016 10:39:53" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\WideLogo.png" archivePath="Assets\WideLogo.png" lastWriteTime="23/04/2016 16:14:46" />
-  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="23/04/2016 18:39:44" />
-  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="23/04/2016 15:28:20" />
-  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="23/04/2016 15:28:19" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="23/04/2016 20:23:26" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="23/04/2016 20:23:26" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="23/04/2016 20:23:26" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="23/04/2016 20:23:26" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="23/04/2016 20:23:26" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="23/04/2016 20:23:26" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="24/04/2016 14:27:07" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\DrawerLayout\Bin\Debug\DrawerLayout.dll" archivePath="DrawerLayout.dll" lastWriteTime="07/04/2016 00:18:31" />
+  <file source="c:\users\nasri\Desktop\C#54v2\FaceBookLoginWP8\Bin\Debug\Facebook.Client.dll" archivePath="Facebook.Client.dll" lastWriteTime="06/06/2014 00:52:36" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\Facebook.7.0.6\lib\wp81\Facebook.dll" archivePath="Facebook.dll" lastWriteTime="24/04/2016 02:17:49" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.1\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="06/02/2015 03:37:50" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="23/04/2016 20:23:19" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\WindowsAzure.Messaging.Managed.0.1.7.9\lib\windowsphone8\Microsoft.WindowsAzure.Messaging.dll" archivePath="Microsoft.WindowsAzure.Messaging.dll" lastWriteTime="24/04/2016 07:40:54" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll" archivePath="Newtonsoft.Json.dll" lastWriteTime="23/04/2016 15:41:54" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.dll" archivePath="System.Net.Http.dll" lastWriteTime="23/04/2016 18:10:16" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll" archivePath="System.Net.Http.Extensions.dll" lastWriteTime="23/04/2016 18:10:16" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll" archivePath="System.Net.Http.Primitives.dll" lastWriteTime="23/04/2016 18:10:16" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\Facebook.7.0.6\lib\wp81\Facebook.xml" archivePath="Facebook.xml" lastWriteTime="24/04/2016 02:17:49" />
+  <file source="c:\users\nasri\Desktop\C#54v2\FaceBookLoginWP8\Bin\Debug\Facebook.Client.xml" archivePath="Facebook.Client.xml" lastWriteTime="06/06/2014 00:52:36" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\Newtonsoft.Json.8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.xml" archivePath="Newtonsoft.Json.xml" lastWriteTime="23/04/2016 15:41:54" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.xml" archivePath="System.Net.Http.xml" lastWriteTime="23/04/2016 18:10:16" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml" archivePath="System.Net.Http.Extensions.xml" lastWriteTime="23/04/2016 18:10:16" />
   <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml" archivePath="System.Net.Http.Primitives.xml" lastWriteTime="23/04/2016 18:10:16" />
-  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="23/04/2016 18:39:45" />
-  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="23/04/2016 18:39:45" />
-  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="23/04/2016 18:39:43" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="24/04/2016 14:27:10" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\3copy.png" archivePath="Assets\3copy.png" lastWriteTime="23/04/2016 19:13:21" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Assets\2copy.png" archivePath="Assets\2copy.png" lastWriteTime="23/04/2016 19:13:22" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\obj\Debug\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="24/04/2016 14:36:11" />
+  <file source="c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\Bin\Debug\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="24/04/2016 14:29:54" />
 </xapCache>

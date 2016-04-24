@@ -6,57 +6,129 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:drawerLayout="clr-namespace:DrawerLayout;assembly=DrawerLayout"
+
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="False">
 
     <!--LayoutRoot est la grille racine où tout le contenu de la page est placé-->
+
+
+
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- REMARQUE CONCERNANT LA LOCALISATION :
-            Pour localiser les chaînes affichées, copiez leurs valeurs dans les clés correctes
-            du fichier de ressources linguistiquement neutre de l'application (AppResources.resx), puis
-            remplacez le texte codé en dur entre les guillemets des attributs
-            par la clause de liaison dont le chemin pointe vers ce nom de chaîne.
-
-            Par exemple :
-
-                Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}"
-
-            Cette liaison pointe vers la ressource de chaîne du modèle appelée ApplicationTitle.
-
-            L'ajout de langues prises en charge à l'onglet Propriétés du projet crée un
-            fichier resx par langue qui peut restituer les valeurs traduites de vos
-            chaînes d'interface utilisateur. La liaison dans ces exemples peut entraîner le retrait de la valeur des
-            attributs du fichier .resx qui correspond à la valeur
-            CurrentUICulture de l'application au moment de l'exécution.
-         -->
-
-        <!--TitlePanel contient le nom de l'application et le titre de la page-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MON APPLICATION" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="nom de la page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-        </StackPanel>
-
-        <!--ContentPanel - placez tout contenu supplémentaire ici-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+        <Grid x:Name="TitleBar" Background="#00ADEF"  Grid.Row ="0" Height="60">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Margin="5"  x:Name="DrawerIcon"  Grid.Column="0" Source="/Assets/ic_drawer.png" HorizontalAlignment="Left" Tap="DrawerIcon_Tapped" />
+            <TextBlock Grid.Column="1" Text="Your Earth" Foreground="White" VerticalAlignment="Center" FontSize="18"/>
         </Grid>
 
-        <!--Supprimez les commentaires pour voir une grille d'alignement qui vous aidera à vous assurer que vos contrôles sont
-            alignés sur les limites communes.  L'image a une marge supérieure de -32px pour
-            tenir compte de la barre d'état système. Attribuez-lui la valeur 0 (ou supprimez la marge)
-            si la barre d'état système est masquée.
+        <drawerLayout:DrawerLayout Grid.Row="1"  x:Name="DrawerLayout">
+            <Grid x:Name="MainFragment" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.Background>
+                    <ImageBrush ImageSource="/Assets/o.jpg"/>
+                </Grid.Background>
+                <Image Name="flech" Source="/Assets/Untitled-2.png" Width="200" Height="200" Margin="13.345,-7.725,266.654,547.725" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.ColumnSpan="2">
+                    <Image.RenderTransform>
+                        <CompositeTransform Rotation="29.821" SkewX="-26.301" TranslateX="-47.929" TranslateY="-12.074"/>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
 
-            Avant l'envoi, supprimez ce XAML et l'image proprement dite.-->
-        <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
+            <Grid x:Name="ListFragment" Background="White" Visibility="Visible">
+                <ScrollViewer>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+
+                        </Grid.RowDefinitions>
+
+                        <Grid x:Name="MenuIdentity" Background="Transparent" Grid.Row="0">
+                            <StackPanel Margin="5" Orientation="Horizontal">
+                                <Image Source="/Assets/2 copy.png" Height="48" Width="48" Stretch="UniformToFill" />
+                                <TextBlock x:Name="FullName" Text="Your Earth" Foreground="Black"  FontSize="18" TextWrapping="Wrap" Margin="10 0 0 0"  />
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:Name="MenuActions" Background="Transparent" Grid.Row="1">
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="10 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Text="MENU" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="16" FontWeight="SemiBold" />
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:Name="All" Background="Transparent" Grid.Row="2" Tap="All_Tap">
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Text="All Observations" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:Name="Add" Background="Transparent" Grid.Row="3" Tap="Add_Tap">
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Text="Add Observation" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:Name="Find" Background="Transparent" Grid.Row="4" Tap="Find_Tap">
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Text="Find observation" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+                        <Grid x:Name="Eonet" Background="Transparent" Grid.Row="5" Tap="Eonet_Tap">
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Name="EonetData" Text="Eonet Data" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+                        <Grid x:Name="climateserv" Background="Transparent" Grid.Row="6" Tap="climateserv_Tap">
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Name="climateservData" Text="climateserv Data" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+                        <Grid x:Name="Connect" Background="Transparent" Grid.Row="7" Tap="Connect_Tap">
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Name="DC" Text="Connect" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+                        <Grid x:Name="About" Background="Transparent" Grid.Row="8" Tap="About_Tap">
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Text="About" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </ScrollViewer>
+
+            </Grid>
+        </drawerLayout:DrawerLayout>
+
     </Grid>
-
 </phone:PhoneApplicationPage>

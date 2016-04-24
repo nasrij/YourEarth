@@ -6,15 +6,25 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
-    shell:SystemTray.IsVisible="True">
-
+    shell:SystemTray.IsVisible="False">
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#0277BD">
+            <shell:ApplicationBarIconButton IconUri="/Assets/camera.png" Text="Photo"  Click="ApplicationBarIconButton_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/add.png" Text="Add" Click="ApplicationBarIconButton_Click_1"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="All Observation" Click="ApplicationBarMenuItem_Click"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
     <!--LayoutRoot est la grille racine où tout le contenu de la page est placé-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="#0288D1">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -22,13 +32,27 @@
 
         <!--TitlePanel contient le nom de l'application et le titre de la page-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MON APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="nom de la page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="Your Earth" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Add Observation" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - placez tout contenu supplémentaire ici-->
+        
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
+                <StackPanel>
+                
+                    <Image Name="image"  />
+                    <TextBox x:Name="Nom" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" Text="Nom Observation" Foreground="Gray" VerticalAlignment="Top" Width="456" GotFocus="Nom_GotFocus" LostFocus="Nom_LostFocus"/>
+                    <TextBox x:Name="description" HorizontalAlignment="Left" Height="157"  TextWrapping="Wrap" Text="Description" Foreground="Gray" VerticalAlignment="Top" Width="456" GotFocus="description_GotFocus" LostFocus="description_LostFocus"/>
+                    <toolkit:ListPicker Name="theme" Height="60" Margin="10,0,10,0" FontSize="30" ItemsSource="{Binding}" >
+                        <toolkit:ListPicker.Background>
+                            <SolidColorBrush Color="White" Opacity=".3"/>
+                        </toolkit:ListPicker.Background>
+                    </toolkit:ListPicker>
 
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
     </Grid>
 

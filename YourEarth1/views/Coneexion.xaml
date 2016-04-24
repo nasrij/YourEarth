@@ -29,7 +29,7 @@
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                        <Image Source="/Assets/logo1.png" Width="300" Height="180" VerticalAlignment="Top" />
+                        <Image  Width="300" Height="180" VerticalAlignment="Top" />
                         <Border Grid.Row="1" CornerRadius="5" Height="163" BorderThickness="10" BorderBrush="White" Margin="10,0,10,0">
                             <Grid Background="White" >
                                 <Grid.RowDefinitions>

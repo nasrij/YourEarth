@@ -8,12 +8,15 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using YourEarth1.Resources;
 using Microsoft.Phone.Notification;
+using YourEarth1.models;
 
 namespace YourEarth1
 {
     public partial class App : Application
     {
-        public const string PushChannelName = "SamplePushChannel";
+        /*public const string PushChannelName = "SamplePushChannel";
+        public Notifications notifications = new Notifications("YourEarth", "Endpoint=sb://yourearth.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=kKLGocmR0gelYb5HlV10dMd4TAcbLnjluCbevMu76GE=");
+        */
         /// <summary>
         /// Permet d'accéder facilement au frame racine de l'application téléphonique.
         /// </summary>
@@ -56,14 +59,21 @@ namespace YourEarth1
                 // et seront alimentées par la batterie lorsque l'utilisateur ne se sert pas du téléphone.
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
-            
-        }
+
+    }
 
 
-        // Code à exécuter lorsque l'application démarre (par exemple, à partir de Démarrer)
-        // Ce code ne s'exécute pas lorsque l'application est réactivée
-        private void Application_Launching(object sender, LaunchingEventArgs e)
+    // Code à exécuter lorsque l'application démarre (par exemple, à partir de Démarrer)
+    // Ce code ne s'exécute pas lorsque l'application est réactivée
+    private async void Application_Launching(object sender, LaunchingEventArgs e)
         {
+           /* var result = await notifications.SubscribeToCategories();
+
+            if (result != null)
+                System.Windows.Deployment.Current.Dispatcher.BeginInvoke(() =>
+                {
+                    MessageBox.Show("Registration Id :" + result.RegistrationId, "Registered", MessageBoxButton.OK);
+                });*/
         }
 
         // Code à exécuter lorsque l'application est activée (affichée au premier plan)

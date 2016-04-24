@@ -1,1 +1,2 @@
+c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\DrawerLayout\DrawerLayout.csproj;neutral
 c:\users\nasri\documents\visual studio 2015\Projects\YourEarth1\YourEarth1\YourEarth1.csproj;neutral

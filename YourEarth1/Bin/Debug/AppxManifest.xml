@@ -7,7 +7,7 @@
 
     Pour plus d'informations sur les fichiers manifeste, consultez http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="3891a9dd-3ac0-48e9-9196-fd2df23ad3fc" Publisher="CN=Nasri" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Identity Name="37901NasreddineJrebi.YourEarth" Publisher="CN=490F3721-AA53-4CCD-9C0D-FDF449430D8D" Version="1.0.0.0" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="08cedb82-bfc3-4240-9411-bc3b1b154292" PhonePublisherId="1832e533-1dfa-4105-8860-334d08317014" />
   <Properties>
     <DisplayName>YourEarth1</DisplayName>

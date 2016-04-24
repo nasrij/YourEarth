@@ -9,6 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Windows.Media;
 using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace YourEarth1.views
 {
@@ -144,7 +145,7 @@ namespace YourEarth1.views
             string s;
             if (pass1.Password == cpass.Password)
             {
-                String url = "http://192.168.43.39/YourEarth/inscrit.php";
+                String url = "http://192.168.231.51/YourEarth/inscrit.php";
                 if (r1.IsChecked == true)
                 {
                     s = r1.Content.ToString();
@@ -175,7 +176,9 @@ namespace YourEarth1.views
                 }
                 else
                 {
-                    MessageBox.Show("Utilisateur Ajouter");                    
+                    MessageBox.Show("Utilisateur Ajouter");
+                    NavigationService.Navigate(new Uri("/views/Coneexion.xaml", UriKind.Relative));
+
                 }
             }
             else
@@ -186,7 +189,7 @@ namespace YourEarth1.views
 
         private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            String url = "http://192.168.43.39/YourEarth/login.php";
+            String url = "http://192.168.231.51/YourEarth/login.php";
             var values = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string> ("pseudo",login.Text ),
@@ -196,15 +199,18 @@ namespace YourEarth1.views
             HttpResponseMessage response = await httpClient.PostAsync(url, new FormUrlEncodedContent(values));
             response.EnsureSuccessStatusCode();
             var responseString = await response.Content.ReadAsStringAsync();
-            if(responseString.Equals("1"))
+            if(responseString.Equals(""))
             {
-                MessageBox.Show("Utilisateur Ajouter");
+                MessageBox.Show("Mot de Passe incorrect");
+                
+
 
             }
             else
             {
-                MessageBox.Show("Mot de Passe incorrect");
-
+                models.User user = JsonConvert.DeserializeObject<models.User>(responseString);
+                models.Data.user = user;
+                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
             }
 
         }
